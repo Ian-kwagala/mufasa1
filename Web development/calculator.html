@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+</head>
+<body>
+    <input type="text" id="display" disabled><br>
+    <button on click="cleardisplay()">C</button>
+    <button on click="appendto display"(1)>1</button>
+    <button on click="append to display"(2)>2</button>
+    <button on click="append to display"(+)>+</button><br>
+    <button on click="append to display"(3)>3</button>
+    <button on click="append to display" (4)>4</button>
+    <button on click="append to display" (-)>-</button><br>
+    <button on click="append to display" (6)>6</button>
+    <button on click="append to display" (7)>7</button>
+    <button on click="append to display" (8)>8</button>
+    <button on click="append to display" (*)>*</button><br>
+    <button on click="append to display" (9)>9</button>
+    <button on click="append to display" (0)>0</button>
+    <button on click="calculate()">=</button>
+    <button on click="append to display('/')">/</button>
+    
+
+    <script>
+        function appendtodisplay(value){
+            document.getelementbyid('display').value+= ";
+        }
+            function caculate(){
+            let displayValue=
+            document.getElementbyid('display').value;
+            if(displayValue){
+                try{
+                    let result=eval(displayvalue);
+                    document.getElementByid('display').value=result;
+                }catch (error){
+                    document.getelementbyid('display').value='error;'
+                }
+            }
+        }
+    </script>
+</body>
+</html>

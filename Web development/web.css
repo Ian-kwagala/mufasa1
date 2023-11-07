@@ -1,0 +1,19 @@
+/*main heading design*/
+.hi{
+    text-align: center;
+    color: greenyellow;
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+/*nav bar design*/
+.navbar{
+    
+
+}
+/*body design*/
+#body{
+    background-image: url(./4.jpg);
+    color: blue;
+
+}
